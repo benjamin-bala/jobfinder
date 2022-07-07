@@ -11,6 +11,7 @@
 .searchbox__heading {
   color: var(--white);
   text-transform: capitalize;
+  text-align: center;
 }
 .searchbox {
   display: flex;
@@ -20,7 +21,7 @@
   padding: 1rem 2rem;
   border-radius: 0.6rem;
   box-shadow: 0.2rem 0.2rem 2rem rgba(190, 190, 190, 0.257);
-  width: 100%;
+  width: 50%;
 }
 .searchbox input {
   border: none;
@@ -28,4 +29,10 @@
   background: none;
   padding: 1rem;
   width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .searchbox {
+    width: 100%;
+  }
 }

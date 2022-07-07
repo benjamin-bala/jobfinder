@@ -1,0 +1,32 @@
+.filter__tabs {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: var(--white);
+  border: 0.1rem solid #eaeaea;
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+.filter__data {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+.filter__checkbox {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+@media screen and (max-width: 768px) {
+  .filter__tabs {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .filter__checkbox {
+    flex-direction: column;
+  }
+}

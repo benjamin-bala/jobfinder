@@ -7,7 +7,7 @@ export default function SearchBox() {
       <h2 className='searchbox__heading'>Search for fulltime jobs here</h2>
       <div className='searchbox max-width'>
         <FiSearch />
-        <input type='search' placeholder='Search by title, companies...' />
+        <input type='search' placeholder='search for jobs, techstack' />
       </div>
     </div>
   );
