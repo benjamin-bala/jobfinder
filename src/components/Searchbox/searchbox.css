@@ -1,0 +1,31 @@
+.searchbox__container {
+  background-color: var(--primary);
+  min-height: 22rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  padding: 1.5rem;
+}
+.searchbox__heading {
+  color: var(--white);
+  text-transform: capitalize;
+}
+.searchbox {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: var(--white);
+  padding: 1rem 2rem;
+  border-radius: 0.6rem;
+  box-shadow: 0.2rem 0.2rem 2rem rgba(190, 190, 190, 0.257);
+  width: 100%;
+}
+.searchbox input {
+  border: none;
+  outline: none;
+  background: none;
+  padding: 1rem;
+  width: 100%;
+}

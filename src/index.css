@@ -5,6 +5,7 @@
   --primary: #3a1d67;
   --warning: #f3ac3d;
   --error: #f83231;
+  --white: #fff;
   --gray1: #333;
   --gray2: #4f4f4f;
   --gray3: #828282;
@@ -23,13 +24,18 @@
   --font-bold: 700;
   --font-light: 300;
 }
-
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 html {
   font-size: 62.5%;
 }
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: var(--font-regular);
+  background-color: #fafafa;
 }
 
 /* fonts */
@@ -51,4 +57,10 @@ body {
 }
 .font-bold {
   font-weight: var(--font-bold);
+}
+
+.max-width {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 1.5rem;
 }
