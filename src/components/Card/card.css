@@ -1,0 +1,24 @@
+.card {
+  display: grid;
+  grid-template-columns: 10rem 1fr;
+  margin: 2rem 0;
+  background-color: var(--white);
+  padding: 1.5rem;
+  border-radius: 0.6rem;
+  box-shadow: 0.1rem 0.1rem 2rem rgba(51, 51, 51, 0.026);
+}
+.card__thumbnail {
+  background: var(--gray5);
+  width: 6rem;
+  height: 6rem;
+  border-radius: 1rem;
+}
+.card__link {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.4rem;
+}
+.card__link a {
+  text-decoration: none;
+}

@@ -5,19 +5,19 @@ export default function Filter() {
   const filterData = [
     {
       name: 'tech',
-      symbol: '',
+      symbol: '💻',
     },
     {
       name: 'design',
-      symbol: '',
+      symbol: '🎨',
     },
     {
       name: 'marketing',
-      symbol: '',
+      symbol: '💼',
     },
     {
-      name: 'support',
-      symbol: '',
+      name: 'content',
+      symbol: '📋',
     },
   ];
   return (

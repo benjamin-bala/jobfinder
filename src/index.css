@@ -16,9 +16,9 @@
   /* font size */
   --font-sm: 1.2rem;
   --font-regular: 1.6rem;
-  --font-large: 2.4rem;
-  --font-xlarge: 3.2rem;
-  --font-2xlarge: 4rem;
+  --font-large: 1.8rem;
+  --font-xlarge: 2.4rem;
+  --font-2xlarge: 3.2rem;
 
   /* font weight */
   --font-bold: 700;
@@ -31,6 +31,7 @@
 }
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 body {
   font-family: 'Montserrat', sans-serif;
@@ -51,7 +52,13 @@ body {
 .text-2xl {
   font-size: var(--font-2xlarge);
 }
+.text-mute {
+  color: var(--gray3);
+}
 
+.text-primary {
+  color: var(--primary);
+}
 .font-light {
   font-weight: var(--font-light);
 }
@@ -59,8 +66,22 @@ body {
   font-weight: var(--font-bold);
 }
 
+/* spacing */
+.spacing-y-1 {
+  margin: 0.5rem 0;
+}
+.spacing-b-2 {
+  margin-bottom: 1rem;
+}
+
 .max-width {
   max-width: 1040px;
   margin: 0 auto;
   padding: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 58%;
+  }
 }
