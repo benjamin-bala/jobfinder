@@ -10,7 +10,7 @@ export default function SearchBox() {
 
   return (
     <div className='searchbox__container'>
-      <h2 className='searchbox__heading'>Search for fulltime jobs here</h2>
+      <h2 className='searchbox__heading'>Search your dream job here</h2>
       <div className='searchbox max-width'>
         <FiSearch />
         <input

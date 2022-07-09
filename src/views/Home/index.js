@@ -16,7 +16,7 @@ export default function Home() {
     if (!loading && data) {
       dispatch({ type: 'store_data', payload: { jobs: data?.jobs } });
     }
-  }, [loading, data]);
+  }, [loading, data, dispatch]);
 
   if (loading) return <Skeleton />;
 
