@@ -4,7 +4,7 @@ Jobfinder
 
 ## Demo link:
 
-Access the project at [https://jobs.netlify.app/](https://jobs.netlify.app)
+Access the project at [https://jobs-finder-app.netlify.app/](https://jobs-finder-app.netlify.app)
 
 ## About the app:
 
