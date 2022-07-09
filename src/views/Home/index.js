@@ -4,19 +4,23 @@ import Filter from '../../components/Filter';
 import SearchBox from '../../components/Searchbox';
 import { JobsApi } from '../../application';
 import { storeContext } from '../../context/store';
+import Skeleton from '../Skeleton';
+import Error from '../Error';
+import { BiMessageSquareError } from 'react-icons/bi';
+
 export default function Home() {
-  const { loading, error, data } = JobsApi();
+  const { loading, error, data, refetch } = JobsApi();
   const { state, dispatch } = useContext(storeContext);
 
   useEffect(() => {
     if (!loading && data) {
       dispatch({ type: 'store_data', payload: { jobs: data?.jobs } });
     }
-  }, [loading]);
+  }, [loading, data]);
 
-  if (loading) return <h2>Loading...</h2>;
+  if (loading) return <Skeleton />;
 
-  if (error) return <h2>Error...</h2>;
+  if (error) return <Error action={refetch} />;
 
   const filteredData =
     state?.jobs &&
@@ -28,8 +32,6 @@ export default function Home() {
       );
     });
 
-  // console.log('filtered data', filteredData);
-
   return (
     <div>
       <SearchBox />
@@ -37,7 +39,12 @@ export default function Home() {
         <Filter />
         {filteredData && <Category data={filteredData} />}
         {filteredData && filteredData.length === 0 ? (
-          <h2>Sorry, we could not find your dream job.</h2>
+          <div className='text-center spacing-y-3'>
+            <BiMessageSquareError size={30} />
+            <p className='text-lg spacing-y-1'>
+              Sorry, we could not find your dream job.
+            </p>
+          </div>
         ) : null}
       </div>
     </div>

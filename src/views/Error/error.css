@@ -1,0 +1,35 @@
+.error {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.error__content {
+  margin: 2rem 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.error__button {
+  margin: 3rem 0;
+  cursor: pointer;
+  background-color: var(--gray5);
+  width: max-content;
+  padding: 1rem 3rem;
+  border-radius: 0.6rem;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+
+.error__button:hover {
+  transform: translateY(-0.2rem);
+}
+.error__button:active {
+  transform: translateY(0rem);
+  box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.042);
+}

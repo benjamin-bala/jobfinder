@@ -55,6 +55,9 @@ body {
 .text-mute {
   color: var(--gray3);
 }
+.text-center {
+  text-align: center;
+}
 
 .text-primary {
   color: var(--primary);
@@ -69,6 +72,9 @@ body {
 /* spacing */
 .spacing-y-1 {
   margin: 0.5rem 0;
+}
+.spacing-y-3 {
+  margin: 2rem 0;
 }
 .spacing-b-2 {
   margin-bottom: 1rem;

@@ -16,7 +16,7 @@ const GET_JOBS = gql`
 `;
 
 export default function JobsApi() {
-  const { loading, error, data } = useQuery(GET_JOBS);
+  const { loading, error, data, refetch } = useQuery(GET_JOBS);
 
-  return { loading, error, data };
+  return { loading, error, data, refetch };
 }

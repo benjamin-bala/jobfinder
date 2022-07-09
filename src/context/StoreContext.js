@@ -11,8 +11,6 @@ const client = new ApolloClient({
   cache: new InMemoryCache(),
 });
 
-console.log(process.env.ADMIN_SECRET);
-
 export default function StoreContext({ children }) {
   const [state, dispatch] = useReducer(reducer, initialState);
   const value = { state, dispatch };
