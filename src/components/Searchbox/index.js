@@ -14,7 +14,7 @@ export default function SearchBox() {
       <div className='searchbox max-width'>
         <FiSearch />
         <input
-          type='search'
+          type='text'
           onChange={(e) => search(e)}
           placeholder='search for jobs, position(eg. fulltime), stack...'
         />
