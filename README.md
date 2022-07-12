@@ -23,7 +23,7 @@ JobFinder is an app that helps developers find their dream jobs at startups arou
 ## Setup
 
 - Download or clone the repository
-- create a `.env' file using the details from `env.example`
+- create a `.env` file using the details from `.env.example`
 - run `npm install`
 - run `npm start` (Runs the app in the development mode)
 - Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
